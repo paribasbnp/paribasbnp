@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagamento</title>
+    <title>Payment</title>
     <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS personnalisé -->
     <style>
         /* Styles CSS pour le contenu de la page */
@@ -184,11 +184,11 @@
 </head>
 <body>
     <div class="container">
-        <h1>Seu painel/h1>
+        <h1>Your panel</h1>
 
         <!-- Section du solde -->
         <div class="solde-section">
-            <div class="solde-label">Saldos de contas :</div>
+            <div class="solde-label">Account balances :</div>
             <div class="solde-montant">250.000 €</div> <!-- Remplacez par le montant réel du solde -->
         </div>
 
@@ -196,8 +196,8 @@
         <table class="transaction-table">
             <thead>
                 <tr>
-                    <th>Data</th>
-                    <th>Descrição</th>
+                    <th>Date</th>
+                    <th>Description</th>
                     <th>Quantia</th>
                 </tr>
             </thead>
@@ -206,7 +206,7 @@
                 <tr>
                     <td>Não há dados disponíveis</td>
                     <td>Nada para mostrar</td>
-                    <td>Não há quantia</td>
+                    <td>There is no amount</td>
                 </tr>                
 
                 <!-- ... Ajoutez d'autres lignes de transaction ici ... -->
@@ -214,37 +214,37 @@
         </table>
 
         <!-- Bouton pour effectuer un virement -->
-        <button class="btn-virement" id="openModal">Transferir dinheiro</button>
+        <button class="btn-virement" id="openModal">Transfer money</button>
 
         <!-- Bouton Retour à l'Accueil -->
-<a href="tableaudebord.html" class="btn-retour-accueil text-center">Para voltar para casa</a>
+<a href="tableaudebord.html" class="btn-retour-accueil text-center">To return home</a>
 
 
         <!-- Modal de virement -->
         <div class="modal" id="virementModal">
             <div class="modal-content">
                 <span class="close-button" id="closeModal">&times;</span>
-                <h2 class="modal-title" style="color: #007bff; font-weight: bold;">Transferir dinheiro</h2>
+                <h2 class="modal-title" style="color: #007bff; font-weight: bold;">Transfer money</h2>
         
                 <form class="virement-form">
                     <div class="form-group row">
-                        <label for="nom" class="col-12 col-md-3">Nome do Destinatário :</label>
+                        <label for="nom" class="col-12 col-md-3">Recipient's name :</label>
                         <div class="col-12 col-md-9">
-                            <input type="text" id="nom" placeholder="Nome do Destinatário" required>
+                            <input type="text" id="nom" placeholder="Recipient's name" required>
                         </div>
                     </div>
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div"></div>
                     <div class="form-group row">
-                        <label for="prenom" class="col-12 col-md-3">Primeiro nome :</label>
+                        <label for="prenom" class="col-12 col-md-3">First name :</label>
                         <div class="col-12 col-md-9">
-                            <input type="text" id="prenom" placeholder="Primeiro nome" required>
+                            <input type="text" id="prenom" placeholder="First name :" required>
                         </div>
                     </div>
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div"></div>
                     <div class="form-group row">
-                        <label for="carteBancaire" class="col-12 col-md-3">Número do cartão bancário :</label>
+                        <label for="carteBancaire" class="col-12 col-md-3">Bank card number :</label>
                         <div class="col-12 col-md-9">
                             <input type="text" id="carteBancaire" placeholder="1234 5678 9012 3456" required>
                         </div>
@@ -253,12 +253,12 @@
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div"></div>
                     <div class="form-group row">
-                        <label for="montant" class="col-12 col-md-3">Valor a ser transferido :</label>
+                        <label for="montant" class="col-12 col-md-3">Amount to be transferred :</label>
                         <div class="col-12 col-md-9">
                             <input type="number" id="montant" placeholder="0.00 €" required>
                         </div>
                     </div>
-                    <button type="button" class="btn-submit" id="validerVirement" disabled>Validar</button>
+                    <button type="button" class="btn-submit" id="validerVirement" disabled>To validate</button>
                     <!-- Ajout d'une div pour créer de l'espace -->
                     <div class="space-div">jpoiji</div>
                 </form>
@@ -266,7 +266,7 @@
                 <div class="progress">
                     <div class="progress-bar" id="progressBar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
                 </div>
-                <p id="errorMessage" style="color: red; display: none;">Tenha cuidado, entre em contato com seu banco ou seu gerente!</p>
+                <p id="errorMessage" style="color: red; display: none;">Be careful, contact your bank or your manager!</p>
             </div>
         </div>
         
@@ -345,7 +345,7 @@
                     progressBar.innerHTML = progress + "%";
 
                     // Vérifiez si le plafond est atteint (80 %)
-                    if (progress === 95) {
+                    if (progress === 75) {
                         clearInterval(interval);
                         errorMessage.style.display = "block";
                     }
