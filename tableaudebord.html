@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Painel de controle</title>
+    <title>Dashboard</title>
     <!-- Liens vers les fichiers CSS de Bootstrap et Bootstrap icons -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -79,22 +79,22 @@
         <ul class="navbar-nav flex-column w-100"> <!-- Utilisez la classe "w-100" pour que le menu occupe toute la largeur -->
             <li class="nav-item active">
                 <a class="nav-link" href="#" onclick="showSection('accueil');">
-                    <i class="fas fa-home"></i>Bem-vindo
+                    <i class="fas fa-home"></i>Welcome
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="profil.html" onclick="showSection('profil');">
-                    <i class="fas fa-user"></i> Perfil
+                    <i class="fas fa-user"></i> Profile
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="virement.html" onclick="showSection('tableaux-de-bord');">
-                    <i class="fas fa-chart-bar"></i> Área de transferência
+                    <i class="fas fa-chart-bar"></i> Transfer area
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" onclick="confirmLogout();">
-                    <i class="fas fa-sign-out-alt"></i> Desconexão
+                    <i class="fas fa-sign-out-alt"></i> Logout
                 </a>
             </li>
         </ul>
@@ -102,61 +102,61 @@
     
 <br>
     <div class="container mt-4" class="font-family: Montserrat">
-        <h1>Bem vindo ao seu dashboard, JOTA ILSON JOSÉ DOS SANTOS
+        <h1>Welcome Mrs KALILOA 
  Senhor.</h1>
 <br>
 
         <!-- Tableau des transactions -->
         <table class="table table-bordered table-striped">
             <br><br>
-            <p><strong>Aqui estão suas transações recentes</strong></p>
+            <p><strong>Here are your recent transactions</strong></p>
 
             <thead>
                 <tr>
-                    <th>Data</th>
-                    <th>Descrição</th>
-                    <th>Quantia</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Amount</th>
                 </tr>
             </thead>
             <tbody>
                 <!-- Lignes du tableau avec les transactions -->
                 <tr>
-                    <td>Sem data</td>
-                    <td>Nada para mostrar</td>
-                    <td>Não há quantia</td>
+                    <td>No date</td>
+                    <td>Nothing to show</td>
+                    <td>There is no amount</td>
                 </tr>
                 <!-- Ajoutez d'autres lignes de transactions ici -->
             </tbody>
         </table>
-        <a href="virement.html" class="btn btn-dark">Transferir dinheiro</a>
+        <a href="virement.html" class="btn btn-dark">Transfer money</a>
     </div>
     
     <!-- Menu de navigation en bas (pour les écrans mobiles) -->
     <nav class="navbar navbar-dark bg-dark d-md-none fixed-bottom">
         <!-- Bouton pour afficher/masquer les éléments du menu -->
         <button class="btn btn-dark" id="menuButton">
-            <i class="fas fa-bars"></i> Cardápio
+            <i class="fas fa-bars"></i> Menu
         </button>
         <!-- Éléments du menu (initiallement masqués) -->
         <ul class="navbar-nav" id="menuItems" style="display: none;">
             <li class="nav-item active">
                 <a class="nav-link" href="accueil.html">
-                    <i class="fas fa-home"></i> Bem-vindo
+                    <i class="fas fa-home"></i> Home page
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="profil.html">
-                    <i class="fas fa-user"></i> Perfil
+                    <i class="fas fa-user"></i> Profile
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="virement.html">
-                    <i class="fas fa-chart-bar"></i>Área de transferência
+                    <i class="fas fa-chart-bar"></i>Transfert area
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#" onclick="confirmLogout()">
-                    <i class="fas fa-sign-out-alt"></i> Desconexão
+                    <i class="fas fa-sign-out-alt"></i> Logout
                 </a>
             </li>
         </ul>        
@@ -189,7 +189,7 @@
             document.getElementById(sectionId).style.display = 'block';
         }
         function confirmLogout() {
-            const confirmResult = confirm("Tem certeza em quem deseja se inscrever? ?");
+            const confirmResult = confirm("Are you sure you want to log out?");
 
             if (confirmResult) {
                 // Redirigez vers la page index.html
